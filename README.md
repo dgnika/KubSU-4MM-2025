@@ -2,13 +2,19 @@
 
 Hello, World!
 
-## How to run postgres and pgadmin in docker
+## Java Spring Service
 
 ```bash
-#to run:
-docker compose -f postgres.yml up -d
-
-#to stop:
-docker compose -f postgres.yml down
+./gradlew clean build
+./gradlew bootRun
 ```
 
+## Postgres & PgAdmin in Docker
+
+```bash
+# To run:
+docker compose -f postgres.yml up -d
+
+# To stop:
+docker compose -f postgres.yml down
+```
